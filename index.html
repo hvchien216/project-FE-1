@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Rạp phim</title>
+    <link rel="icon"  href="img/home-icon.png">
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/5c2f2f612d.js"></script>
+  </head>
+  <body>
+    <nav class="ani-navbar-default">
+      <div class="logo"><h1>film WORLD</h1></div>
+      <div class="menu">
+        <ul>
+          <li><a href="#"><img src="img/home-icon.png" width="30px" alt=""></a></li>
+          <li>
+            <a href="#">
+              <i class="material-icons"> camera_alt </i>Thế giới phim<i
+                class="material-icons"
+              >
+                expand_more
+              </i>
+            </a>
+            <ul class="sub-menu">
+              <li>Phim đang chiếu</li>
+              <li>Phim sắp chiếu</li>
+              <li>Phim Việt Nam   <i class="fas fa-angle-right"></i>
+              <ul class="second-sub-menu">
+                <li>Tình cảm</li>
+                <li>Hành động</li>
+                <li>Hoạt Hình</li>
+              </ul>
+              </li>
+              <li>Phim dành cho trẻ con</li>
+            </ul>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="material-icons"> movie_filter </i>Góc điện ảnh<i
+                class="material-icons"
+              >
+                expand_more
+              </i></a
+            >
+            <ul class="sub-menu">
+              <li>Tin tức điện ảnh</li>
+              <li>Phổ ảnh đẹp</li>
+              <li>Người mẫu<i class="fas fa-angle-right"></i>
+              <ul class="second-sub-menu">
+                <li>Việt Nam</li>
+                <li>Châu Á</li>
+                <li>Châu Âu</li>
+              </ul></li>
+              <li>Diễn viên mới</li>
+            </ul>
+          </li>
+          <li>
+            <a href="#"><i class="material-icons"> star </i>Khuyến mãi</a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="material-icons"> perm_contact_calendar </i>Thành viên<i
+                class="material-icons"
+              >
+                expand_more
+              </i></a
+            >
+            <ul class="sub-menu">
+              <li><i class="material-icons">
+                  person
+                  </i>Tên đăng nhập</li>
+              <li><i class="fas fa-cogs"></i>Cài đặt</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <section id="sec-1" class="slider">
+        <div class="ticket-tab">
+          <div class="tab-header">
+            <p class="selected" onclick="ShowTab(event,0)">Theo rạp</p>
+            <p onclick="ShowTab(event,1)">Theo phim</p>
+          </div>
+          <div class="content-tab">
+            <div class="tab">
+            <form>
+                  <select name="choose">
+                      <option value="" selected disible hidden> Chọn rạp</option>
+                      <option value="volvo">Film World Q1</option>
+                      <option value="volvo">Film World Q1</option>
+                      <option value="volvo">Film World Q1</option>
+                      <option value="volvo">Film World Q1</option>
+                  </select>
+                  <select name="choose">
+                        <option value="" selected disible hidden> Chọn ngày</option>
+                        <option value="volvo">Chủ nhật, 28/10/2018</option>
+                        <option value="saab">Thứ Hai, 29/10/2018</option>
+                        <option value="saab">Thứ Ba, 30/10/2018</option>
+                  </select>
+                    <select name="choose">
+                          <option value="" selected disible hidden> Chọn suất</option>
+                          <option value="volvo">9h45, 2D Phụ đề</option>
+                          <option value="volvo">10h45, 2D Phụ đề</option>
+                          <option value="volvo">11h00, 2D Phụ đề</option>
+                          <option value="volvo">12h15, 2D Phụ đề</option>
+                          <option value="volvo">13h45, 2D Phụ đề</option>
+                          <option value="volvo">14h45, 2D Phụ đề</option>
+                  </select>
+                  <select name="choose">
+                        <option value="" selected disible hidden> Chọn phim</option>
+                        <option value="volvo">Phim 1</option>
+                        <option value="volvo">Phim 2</option>
+                        <option value="volvo">Phim 3</option>
+                        <option value="volvo">Phim 4</option>
+                        <option value="volvo">Phim 5</option>
+                        <option value="volvo">Phim 6</option>
+                  </select>
+                  <button type="button"><i class="fas fa-dollar-sign"></i> Mua vé</button>
+            </form>
+            </div>
+            <div class="tab">
+                <form>
+                      <select name="choose">
+                          <option value="" selected disible hidden> Chọn ngày</option>
+                          <option value="volvo">Film World Q1</option>
+                          <option value="volvo">Film World Q1</option>
+                          <option value="volvo">Film World Q1</option>
+                          <option value="volvo">Film World Q1</option>
+                      </select>
+                      <select name="choose">
+                            <option value="" selected disible hidden> Chọn rạp</option>
+                            <option value="volvo">Chủ nhật, 28/10/2018</option>
+                            <option value="saab">Thứ Hai, 29/10/2018</option>
+                            <option value="saab">Thứ Ba, 30/10/2018</option>
+                      </select>
+                        <select name="choose">
+                              <option value="" selected disible hidden> Chọn phim</option>
+                              <option value="volvo">9h45, 2D Phụ đề</option>
+                              <option value="volvo">10h45, 2D Phụ đề</option>
+                              <option value="volvo">11h00, 2D Phụ đề</option>
+                              <option value="volvo">12h15, 2D Phụ đề</option>
+                              <option value="volvo">13h45, 2D Phụ đề</option>
+                              <option value="volvo">14h45, 2D Phụ đề</option>
+                      </select>
+                      <select name="choose">
+                            <option value="" selected disible hidden> Chọn suất</option>
+                            <option value="volvo">Phim 1</option>
+                            <option value="volvo">Phim 2</option>
+                            <option value="volvo">Phim 3</option>
+                            <option value="volvo">Phim 4</option>
+                            <option value="volvo">Phim 5</option>
+                            <option value="volvo">Phim 6</option>
+                      </select>
+                      <button type="button"><i class="fas fa-dollar-sign"></i> Mua vé</button>
+                </form>
+                </div>
+          </div>
+        </div>
+        <img src="img/Slider (1).jpg" alt="" />
+        <img src="img/Slider (2).jpg" alt="" />
+        <img src="img/Slider (3).png" alt="" />
+      </section>
+      <section id="sec-2">
+        <h1>Danh sách khuyến mãi</h1>
+        <div class="d-flex">
+          <div class="sub-sec-2">
+            <img src="img/promotion01.jpg" width="100%" alt="" />
+            <div class="title-promotion">
+                <h4><b>Xem Phim Quá Đã - Nhận Quà The Coffee House</b></h4>
+                <p>Từ 24. 10-29. 10, <b>Galaxy Cinema</b> dành tặng cho các khách hàng thân thiết một phần quà đặc biệt.</p>
+                </div>
+          </div>
+          <div class="sub-sec-2"><img src="img/promotion02.jpg" alt="" width="100%" />
+            <div class="title-promotion">
+                <h4><b>The More The Merrier Halloween Xôm Tụ</b></h4>
+                <p>Từ 15. 10-31.10, <b>Combo Halloween</b> hấp dẫn nhất từ trước đến nay sẽ có mặt tại tất cả các rạp <b>Galaxy Cinema</b> toàn quốc.</p>
+                </div>
+          </div>
+          <div class="sub-sec-2"><img src="img/promotion03.jpg" width="100%" alt="" />
+            <div class="title-promotion">
+                <h4><b>Cà Thẻ Tẹt Ga -  Cuối Tuần Thật Đã</b></h4>
+                <p><b>Galaxy Cinema</b> dành tặng các Stars chương trình ưu đãi vô cùng hấp dẫn <b>Cà Thẻ Tẹt Ga -  Cuối Tuần Thật Đã</b>.</p>
+                </div></div>
+          <div class="sub-sec-2"><img src="img/promotion04.jpg" width="100%" alt="" />
+            <div class="title-promotion">
+                <h4><b>Xem Phim Vui - Khui Qùa Lớn Tại Galaxy Huỳnh Tấn Phát</b></h4>
+                <p>Mừng <b>Galaxy Huỳnh Tấn Phát</b> tròn 01 tuổi, <b>Galaxy Cinema</b> dành tặng chương trình ưu đãi khủng cho các khách hàng thân thiết.</p>
+                </div></div>
+          <div class="sub-sec-2"><img src="img/promotion05.jpg" width="100%" alt="" />
+            <div class="title-promotion">
+                <h4><b>Xem Phim Galaxy Cinema - Ăn Pizza Thả Ga</b></h4>
+                <p>Giusp các Stars vượt qua mùa siêu phẩm siêu "cháy túi", <b>Galaxy Cinema</b> dành tặng đén 50.000 voucher ăn thỏa thích pizza.</p>
+                </div></div>
+        </div>
+      </section>
+      <section id="sec-3">
+        <div class="d-flex">
+          <div class="sub-sec-3">
+            <div class="uu-dai">
+              <img src="img/time-icon.png" width="80px" alt="" />
+            </div>
+            <h4>THỜI GIAN LINH HOẠT</h4>
+            <p>
+              film World phục vụ quý khách với nhiều khung giờ khác </p>
+              <p>nhau phừ hợp với công viêc, đảm bảo quý khách có </p>
+              <p>những khoảng thờ gi an thật thư giản với chúng tôi.</p>
+            </p>
+            <ul type="square">
+              <li>Buổi sáng: 8:00 đến 11h30</li>
+              <li>Buổi chiều: 12h30 đến 17:00</li>
+              <li>Buổi tối: 18h00 đến 23h30</li>
+            </ul>
+          </div>
+          <div class="sub-sec-3">
+            <div class="uu-dai">
+              <img src="img/money-icon.png" width="80px" alt="" />
+            </div>
+            <h4>GIÁ SINH VIÊN</h4>
+            <p>Với mục đích phục vụ tất cả mọi người, mức giá</p>
+            <p>film World đưa ra cho các dịch vụ tuyệt vời của mình là</p><p> hết sức bất ngờ. Qúy khách sẽ được phục vụ tốt nhất </p><p>với mức giá rẻ chưa từng có  </p>
+            <ul type="none">  
+              <li>Ngày thường</li>
+              <li>2D: 50K 3D:80K</li>
+              <li>Ngày lễ, thứ bảy, chủ nhật: 70K</li>
+              <li>2D: 70K 3D:100K</li>
+            </ul>
+          </div>
+          <div class="sub-sec-3">
+            <div class="uu-dai">
+              <img src="img/quality-icon.png" width="80px" alt="" />
+            </div>
+            <h4>THỜI GIAN LINH HOẠT</h4>
+            <p>"Tiền nào của đó." film WORLD cam kết sẽ thực hiện</p>
+            <p>tốt nhất các dịch vụ của mình đảm quý khách sẽ<p><p>cảm thấy hài lòng với số tiền mình bỏ ra.</p>
+            
+            <p>film WORLD áp dụng những công nghệ trình chiếu mới</p><p>nhât, màn hình rộng chuẩn quốc tế, hình ảnh rõ net,</p><p>chất lượng tuyệt mỹ</p>
+            
+            <p>film WORLD cam kết đảm bảo về sức khỏe về mắt với</p>
+            <p>hệ thống kiến trúc ghế ngời với khoảng cách phừ hợp</p><p>an toàn.</p>
+          </div>
+        </div>
+      </section>
+      <section id="sec-4">
+        <div class="tab-header-phim">
+          <p class="selected" onclick="ShowTabPhim(event,0)" >Phim đang chiếu</p>
+          <p onclick="ShowTabPhim(event,1)" >Phim sắp chiếu</p>
+        </div>
+        <div class="content-tab-phim">
+          <div class="tab-phim">
+            <div class="d-flex-tab-phim">
+              <div class="sub-sec-4">
+                <div class="phim-img">
+                <img src="img/1.jpg" width="100%" alt="">
+                <div class="xem-ngay"><a href="#">Xem ngay</a></div>
+              </div>
+              <p>Vì sao vụt sáng</p></div>
+              <div class="sub-sec-4">
+                  <div class="phim-img">
+                  <img src="img/2.jpg" width="100%" alt="">
+                  <div class="xem-ngay"><a href="#">Xem ngay</a></div>
+                </div>
+              <p>Kế hoạch đổi chồng</p></div>
+              <div class="sub-sec-4">
+                  <div class="phim-img">
+                  <img src="img/3.jpg" width="100%" alt="">
+                  <div class="xem-ngay"><a href="#">Xem ngay</a></div>
+                </div>
+              <p>Chân nhỏ ban ở đâu?</p></div>
+              <div class="sub-sec-4">
+                  <div class="phim-img">
+                  <img src="img/4.jpg" width="100%" alt="">
+                  <div class="xem-ngay"><a href="#">Xem ngay</a></div>
+                </div>
+              <p>Bào thai quỷ</p></div>
+            </div>
+            <div class="d-flex-tab-phim">
+                <div class="sub-sec-4">
+                    <div class="phim-img">
+                    <img src="img/5.jpg" width="100%" alt="">
+                    <div class="xem-ngay"><a href="#">Xem ngay</a></div>
+                  </div>
+              <p>Thiên thần công lý</p></div>
+              <div class="sub-sec-4">
+                  <div class="phim-img">
+                  <img src="img/6.jpg" width="100%" alt="">
+                  <div class="xem-ngay"><a href="#">Xem ngay</a></div>
+                </div>
+              <p>Đại chiến thành ANSI</p></div>
+              <div class="sub-sec-4">
+                  <div class="phim-img">
+                  <img src="img/7.jpg" width="100%" alt="">
+                  <div class="xem-ngay"><a href="#">Xem ngay</a></div>
+                </div>
+                <p>Lời nhắn của oan hồn</p>
+              </div>
+              <div class="sub-sec-4">
+                  <div class="phim-img">
+                  <img src="img/8.jpg" width="100%" alt="">
+                  <div class="xem-ngay"><a href="#">Xem ngay</a></div>
+                </div>
+              <p>Ngôi nhà có chiếc đồng hồ ma thuật</p></div>
+            </div>
+          </div>
+          <div class="tab-phim">
+              <div class="d-flex-tab-phim">
+                  <div class="sub-sec-4">
+                      <div class="phim-img">
+                      <img src="img/5.jpg" width="100%" alt="">
+                      <div class="xem-ngay"><a href="#">Xem ngay</a></div>
+                    </div>
+                <p>Thiên thần công lý</p></div>
+                <div class="sub-sec-4">
+                    <div class="phim-img">
+                    <img src="img/6.jpg" width="100%" alt="">
+                    <div class="xem-ngay"><a href="#">Xem ngay</a></div>
+                  </div>
+                <p>Đại chiến thành ANSI</p></div>
+                <div class="sub-sec-4">
+                    <div class="phim-img">
+                    <img src="img/7.jpg" width="100%" alt="">
+                    <div class="xem-ngay"><a href="#">Xem ngay</a></div>
+                  </div>
+                  <p>Lời nhắn của oan hồn</p>
+                </div>
+                <div class="sub-sec-4">
+                    <div class="phim-img">
+                    <img src="img/8.jpg" width="100%" alt="">
+                    <div class="xem-ngay"><a href="#">Xem ngay</a></div>
+                  </div>
+                <p>Ngôi nhà có chiếc đồng hồ ma thuật</p></div>
+              </div>
+              <div class="d-flex-tab-phim">
+                  <div class="sub-sec-4">
+                    <div class="phim-img">
+                    <img src="img/1.jpg" width="100%" alt="">
+                    <div class="xem-ngay"><a href="#">Xem ngay</a></div>
+                  </div>
+                  <p>Vì sao vụt sáng</p></div>
+                  <div class="sub-sec-4">
+                      <div class="phim-img">
+                      <img src="img/2.jpg" width="100%" alt="">
+                      <div class="xem-ngay"><a href="#">Xem ngay</a></div>
+                    </div>
+                  <p>Kế hoạch đổi chồng</p></div>
+                  <div class="sub-sec-4">
+                      <div class="phim-img">
+                      <img src="img/3.jpg" width="100%" alt="">
+                      <div class="xem-ngay"><a href="#">Xem ngay</a></div>
+                    </div>
+                  <p>Chân nhỏ ban ở đâu?</p></div>
+                  <div class="sub-sec-4">
+                      <div class="phim-img">
+                      <img src="img/4.jpg" width="100%" alt="">
+                      <div class="xem-ngay"><a href="#">Xem ngay</a></div>
+                    </div>
+                  <p>Bào thai quỷ</p></div>
+              </div>
+          </div>
+        </div>
+      </section>
+      <section id="sec-5">
+        <div class="comment">
+            <span class="tab-header-comment">Góc bình luận</span>
+          <div class="d-flex-comment">
+            <div class="title-comment">
+              <div class="img-cmt">
+                <img src="img/entry01.jpg" width="100%" alt="">
+              </div>
+              <div class="review-cmt">
+                <h3><b>[Review] Bad Times At El Royale: Trải Nghiệm Kinh Hoàng Ở Khách Sạn Hạng Sang</b></h3>
+                <span class="like"><i class="far fa-thumbs-up"></i>Thích 17</span>
+                <span class="viewer"><i class="fas fa-users"></i>3409</span>
+                <span class="star"><i class="fas fa-star"></i>5</span>
+                <p>Kể cả khi chiếc quần sắp tụt và mấy múi cơ bụng "thần thánh" của Chris Hemsworth không đủ hấp dẫn bạn,<b>Bad Times At The El Royale</b> vẫn là một <i>phim hay </i>đáng xem.</p>
+              </div>
+          </div>
+            <div class="title-comment">
+              <div class="img-cmt">
+                <img src="img/entry02.jpg" width="100%" alt="">
+              </div>
+              <div class="review-cmt">
+                  <h3><b>[Review] Người Bất Tử: Có Quá Nhiều Điều Để Khen Ngợi</b></h3>
+                  <span class="like"><i class="far fa-thumbs-up"></i>Thích 17</span>
+                <span class="viewer"><i class="fas fa-users"></i>3409</span>
+                <span class="star"><i class="fas fa-star"></i>5</span>
+                <p>Qủa không bỏ công mong chờ, Người Bất Tử của đọa diễn Victor Vũ thực sự là bộ phim Việt hay nhất trong năm 2018 tính đến thời điểm hiện tại.</p>
+              </div>
+          </div>
+          </div>
+        </div>
+        <div class="comment">
+            <span class="tab-header-comment">Góc bình luận</span>
+          <div class="d-flex-comment">
+            <div class="title-comment">
+              <div class="img-cmt">
+                <img src="img/entry03.jpg" width="100%" alt="">
+              </div>
+              <div class="review-cmt">
+                <h3><b>Học Địa Lý Nước Mỹ Bằng Phim Kinh Dị - Phần 1</b></h3>
+                <span class="like"><i class="far fa-thumbs-up"></i>Thích 17</span>
+                <span class="viewer"><i class="fas fa-users"></i>3409</span>
+                
+                <p>Vừa xem các bộ phim kinh dị nổi tiếng vừa biết thêm về các bang của nước mỹ. Một công mà đôi việc nhé!.</p>
+              </div>
+          </div>
+            <div class="title-comment">
+              <div class="img-cmt">
+                <img src="img/entry04.jpg" width="100%" alt="">
+              </div>
+              <div class="review-cmt">
+                  <h3><b>14 Rạp Chiếu Phim Mà Bạn Nên Ghé Qua Một Lần Trong Đời</b></h3>
+                  
+                  <span class="like"><i class="far fa-thumbs-up"></i>Thích 17</span>
+                <span class="viewer"><i class="fas fa-users"></i>3409</span>
+                <p>14 rạp chiếu phim trong danh sách dưới đây chắc chắc chắn sẽ khiến bạn thay đổi khái điểm hoàn toàn.</p>  
+                
+              </div>
+          </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer><div class="d-flex-footer">
+      <ul>
+        <li><a href="#">GIỚI THIỆU</a></li>
+        <li><a href="#"><i class="far fa-arrow-alt-circle-right"></i>VỀ CHÚNG TÔI</a></li>
+        <li><a href="#"><i class="far fa-arrow-alt-circle-right"></i>THỎA THUẬN SỬ DỤNG</a></li>
+        <li><a href="#"><i class="far fa-arrow-alt-circle-right"></i>QUY CHẾ HOẠT ĐỘNG</a></li>
+        <li><a href="#"><i class="far fa-arrow-alt-circle-right"></i>CHÍNH SÁCH BẢO MẬT</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">GÓC ĐIỆN ẢNH</a></li>
+        <li><a href="#"><i class="far fa-file-image"></i>THỂ LOẠI PHIM</a></li>
+        <li><a href="#"><i class="far fa-file-image"></i>BÌNH LUẬN PHIM</a></li>
+        <li><a href="#"><i class="far fa-file-image"></i>BLOG ĐIỆN ẢNH</a></li>
+        <li><a href="#"><i class="far fa-file-image"></i>PHIM HAY THÁNG</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">HỖ TRỢ</a></li>
+        <li><a href="#">GÓP Ý</a></li>
+        <li><a href="#">SALE & SERVICES</a></li>
+        <li><a href="#">RẠP / GIÁ VÉ</a></li>
+        <li><a href="#">TUYỂN DỤNG</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">LIÊN KẾT</a></li>
+        <li>
+          <a href="#"><i class="fab fa-facebook-square"></i></a>
+          <a href="#"><i class="fab fa-youtube-square"></i></a>
+          <a href="#"><i class="fab fa-skype"></i></a>
+          <a href="#"><i class="fab fa-google-plus-square"></i></a>
+        </li>
+        <li><a href="#">DOWNLOAD APP</a></li>
+        <li>
+          <a href="#"><i class="fab fa-android"></i></a>
+          <a href="#"><i class="fab fa-apple"></i></a>
+        </li>
+      </ul>
+    </div></footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
